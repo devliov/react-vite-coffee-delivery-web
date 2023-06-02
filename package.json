@@ -1,4 +1,5 @@
 {
+  "homepage":"devliov.github.io/react-coffee-delivery-main/index",
   "name": "coffee-delivery",
   "private": true,
   "version": "0.0.0",
@@ -8,7 +9,9 @@
     "build": "tsc && vite build",
     "lint": "eslint",
     "preview": "vite preview",
-    "lint:fix": "npx eslint src --ext .ts,.tsx --fix"
+    "lint:fix": "npx eslint src --ext .ts,.tsx --fix",
+    "predeploy":"npm run build",
+    "deploy":"gh-pages -d dist"
   },
   "dependencies": {
     "@hookform/resolvers": "^3.1.0",
@@ -43,6 +46,7 @@
     "eslint-plugin-react": "^7.32.2",
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
+    "gh-pages": "^5.0.0",
     "typescript": "^5.0.4",
     "vite": "^4.3.2",
     "yarn": "^1.22.19"
